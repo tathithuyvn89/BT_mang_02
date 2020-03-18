@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap so 5</title>
+</head>
+<body>
+<script>
+    let a= prompt("Nhap vao cau ma ban muon");
+    let b = prompt("Nhap lai cau ma ban vua viet");
+    console.log(a.length);
+    console.log(b.length);
+    let count = 0;
+    if (a.length===b.length) {
+        for (let i=0; i<a.length; i++){
+            if (a[i] ===b[i]){
+                count++;
+                console.log(count);
+            }
+        }
+        if (count===a.length){
+            alert("Hai chuoi giong nhau");
+        } else {
+            alert("Hai chuoi o cac ky tu khac nhau");
+        }
+
+    } else {
+        alert("Hai chuoi ban nhap la khac nhau")
+    }
+</script>
+</body>
+</html>
